@@ -199,17 +199,6 @@ a {
         }
         
     }
-
-    nav {
-        display: none;
-
-
-        .secondary-nav {
-            img {
-                height: 3em;
-            }
-        }
-    }
     
     .container {
         display: flex;
@@ -234,6 +223,7 @@ ul {
 }
 
 nav {
+    display: none;
     position: fixed;
     z-index: 999;
     width: 66%;
@@ -250,7 +240,7 @@ nav {
 
     li {
         a {
-            color: white;
+            color: var(--dark-font-color);
             text-decoration: none;
             display: block;
             padding: .5em;
@@ -265,11 +255,14 @@ nav {
     }
 
     ul.secondary-nav {
-        margin: 5em;
-        text-align: center;
 
         li {
             display: inline-block;
+            margin: 1em;
+        }
+
+        img {
+            height: 2em;
         }
     }
 }
