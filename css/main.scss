@@ -623,12 +623,14 @@ footer {
         }
 
         ul.secondary-nav {
-            margin: 0;
+
             text-align: center;
     
             li {
                 display: inline-block;
+                margin: 0;
             }
+            
             img {
                 height: 1.5em;
             }

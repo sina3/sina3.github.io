@@ -338,11 +338,11 @@ footer ul img {
     font-weight: bold;
   }
   .navbar nav ul.secondary-nav {
-    margin: 0;
     text-align: center;
   }
   .navbar nav ul.secondary-nav li {
     display: inline-block;
+    margin: 0;
   }
   .navbar nav ul.secondary-nav img {
     height: 1.5em;
