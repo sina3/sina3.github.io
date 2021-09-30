@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap');
+* {
+    margin:0;
+    
+}
+:root {
+
+    // Theme Colors
+    --primary-color:                #577590;
+    --accent-color:                 #e9edc9;
+    --featured-color:               #ccd5ae;
+    --background-color:             #fefcfb;
+    --navigation-background-color:  #ccd5ae;
+    --warning-color:                coral;
+    --tutorial-warning-color:       rgb(241, 82, 82);
+    // Font Colors
+    --link-color:                   #a8146f;
+    --dark-font-color:              black;
+    --light-font-color:             white;
+    --accent-font-color:            indigo;
+
+
+}
+
+/* -------------------
+     Global Styles
+---------------------*/
+
+body {
+    background: var(--background-color);
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 2em 2em;
+    overflow: hidden;
+}
+
+
+/* -------------------
+     Typography
+---------------------*/
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.subhead {
+    font-size: 1.1rem;
+}
+
+.hero-btn {
+    font-size: 1.1rem;
+}
+
+.fp-button {
+
+    font-size: 1.1rem;
+}
+
+.all-projects {
+    font-size: 1.2rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1em;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5em;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+
+    .subhead {
+        font-size: 1.2rem;
+    }
+
+    .hero-btn {
+        font-size: 1.2rem;
+    }
+
+    .fp-button {
+
+        font-size: 1.2rem;
+    }
+
+    .all-projects {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (min-width: 1080px) {
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1em;
+    }
+    
+    h2 {
+        font-size: 2.3rem;
+        margin-bottom: 0.5em;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+
+    .subhead {
+        font-size: 1.5rem;
+    }
+
+    .hero-btn {
+        font-size: 1.4rem;
+    }
+
+    .fp-button {
+
+        font-size: 1.3rem;
+    }
+
+    .all-projects {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1400px) {
+
+    
+    p {
+        line-height: 2rem;
+    }
+    
+}
+
+
+/* -------------------
+     Navigation
+---------------------*/
+
+.navbar {
+    background: var(--navigation-background-color);
+    padding: 1em;
+    overflow: hidden;
+    
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+
+        span {
+            color: var(--link-color);
+        }
+        
+    }
+
+    nav {
+        display: none;
+
+
+        .secondary-nav {
+            img {
+                height: 3em;
+            }
+        }
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+        overflow: hidden;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: var(--featured-color);
+    height: 100vh;
+    padding: 1em;
+
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            text-align: right;
+            cursor: pointer;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+        
+    }
+
+    ul.secondary-nav {
+        margin: 5em;
+        text-align: center;
+
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+/* -------------------
+     Back To Top Button
+---------------------*/
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(230, 93, 2); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    img {
+        width: 20px;
+    }
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/* -------------------
+     Project Overview
+---------------------*/
+  
+
+
+.projects-overview {
+    text-align: center;
+    background: var(--accent-color);
+    margin-bottom: 2em;
+
+    h1 {
+        text-shadow: 0.02em 0.1em 0.1em rgb(235, 235, 235);
+    }
+
+    .project-thumbnails-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .project-thumbnail {
+        flex-basis: 20%;
+        margin: 1em;
+        border: 3px solid var(--primary-color);
+        border-radius: 0.5em;
+        padding: 0.3em;
+    
+        a {
+            display: block;
+            color: var(--dark-font-color);
+        }
+    
+        img {
+            width: 60%;
+            max-width: 80px;
+        }
+    }
+
+    .ipad-app-thumbnail {
+
+        img {
+            width: 100%;
+            max-width: 185px;
+        }
+    }
+    
+    .project-thumbnail:hover {
+
+        a {
+            color: var(--light-font-color);
+        }
+        
+        background: var(--primary-color);
+    }
+
+}
+
+
+
+/* -------------------
+     Project Grid
+---------------------*/
+
+.project-grid {
+    background: var(--featured-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    color: var(--dark-font-color);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 5em;
+
+    a {
+        color: black;
+    }
+    
+
+    h1 {
+        text-align: center;
+        color: var(--dark-font-color);
+        text-shadow: 0.02em 0.1em 0.1em rgb(235, 235, 235);
+        border-radius: .3em;
+        margin-inline: 1em;
+        margin-top: -1.2em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
+
+    .image-wrap {
+        margin: 1em auto;
+
+    }
+
+    .app-highlight-img {
+        display: block;
+        width: 50%;
+        min-width: 320px;
+        margin: auto;
+
+    }
+
+    .tutorial-warning {
+    
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            height: 5vw;
+            max-height: 40px;
+        }
+        display: block;
+        width: fit-content;
+        text-align: center;
+        background: var(--tutorial-warning-color);
+        padding: 0.5em 2em 0.5em 1em;
+        border-radius: 0.5em;
+        margin: 0 auto;
+    }
+
+    
+
+    .about-app {
+        margin: 0.5em;
+        padding: 1em 2em;
+        background: var(--accent-color);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: .5em;
+    }
+
+    p {
+        line-height: 1.7em;
+    }
+
+    h2 {
+        margin: 0.5em 0;
+    }
+
+    .tech-stack {
+
+        margin: 0.5em;
+        padding: 0em 2em;
+        background: var(--accent-color);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: .5em;
+    }
+
+    li {
+        margin-bottom: 0.8em;
+        margin-left: 2em;
+        position: relative;
+
+        &:before {
+            content: '';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/chevron.png');
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        margin: 0.5em;
+        margin-top: 0.8em;
+        padding: 0.5em;
+        background: var(--accent-color);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: .5em;
+        
+    }
+
+    .links-item {
+        margin-inline: 1em;
+
+    }
+
+    .app-store-logo {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        max-width: 120px;
+        margin: auto;
+    }
+
+    .github-btn {
+        border-radius: 0.5em;
+        background: var(--primary-color);
+        padding: 0.5em 0.5em .5em 2.5em;
+        height: 100%;
+
+        &:before {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: -2em;
+            margin-right: 0.5em;
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-image: url('../images/github-bl.svg');
+            background-size: contain;
+        }
+    }
+
+    .under-dev {
+
+        width: fit-content;
+        display: block;
+        text-align: center;
+        background: var(--warning-color);
+        padding: 0.5em 3em;
+        border-radius: 0.5em;
+        margin: 0em auto;
+
+    
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            height: 5vw;
+            max-height: 40px;
+            margin-right: 0.2em;
+        }
+    
+    }
+
+}
+
+
+/* -------------------
+     Footer Section
+---------------------*/
+
+footer {
+    background: black;
+    color: white;
+    padding: 5em 2em;
+    text-align: center;
+
+    ul {
+
+        li {
+            display: inline-block;
+            margin: 0 0.5em;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: .2em;
+            height: 2em;                
+        }
+    }
+    
+}
+
+
+/* -------------------
+     Media Queries
+---------------------*/
+
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: black;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+
+        li.current a {
+            font-weight: bold;
+        }
+
+        ul.secondary-nav {
+            margin: 0;
+            text-align: center;
+    
+            li {
+                display: inline-block;
+            }
+            img {
+                height: 1.5em;
+            }
+        }
+
+    }
+
+    .projects-overview {
+
+        h1 {
+            margin-bottom: 0.5em;
+        }
+
+    }
+
+    .project-content {
+        display: flex;
+
+        .about-app {
+            flex-basis: 70%;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+
+        .tech-stack {
+            flex-basis: 30%;
+            margin-bottom: 0;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+}

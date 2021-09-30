@@ -1,29 +1,198 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sina Reza, iOS Dev</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sina Rezazadeh, iOS Developer</title>
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>        		
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Sina Reza!</h1>
-				<p>I'm a junior iOS developer</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+		<div class="navbar">
+			<div class="container">
+				<a class="logo" href="">Sina<span>Rezazadeh</span></a>
+
+				<img id="mobile-cta" class="mobile-menu" src="images/menu-icon.svg" alt="Open Navigation">
+
+				<nav>
+					<img id="mobile-exit" class="mobile-menu-exit" src="images/close-icon.svg" alt="Close Navigation">
+					<ul class="primary-nav">
+						<li class="current"><a href="">Home</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="Sina Rezazadeh - Resume.pdf">Resumé</a></li>
+						<li><a href="about.html">About Me</a></li>
+					</ul>
+
+					<ul class="secondary-nav">
+						<li><a target="_blank" href="https://twitter.com/sinarez"><img src="images/twitter-logo.svg" alt="My Twitter"></a></li>
+						<li><a target="_blank" href="https://github.com/sina3"><img src="images/github-bl.svg" alt="My Github"></a></li>
+						
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+
+		<section class="hero">
+			<div class="container">
+				<div class="left-col">
+					<p class="subhead">Hi there, I'm Sina!</p>
+					<h1>An iOS developer</h1>
+					<p>from Hamilton, Ontario, Canada 🇨🇦</p>
+
+					<div class="hero-cta">
+						<a href="/about.html" class="hero-btn">About Me</a>
+						<a href="/Sina Rezazadeh - Resume.pdf" class="hero-btn down-resume">Download Resume</a>
+					</div>
+				</div>
+				<img src="images/portrait.JPG" class="hero-img" alt="Portrait">
+			</div>
+			
+		</section>
+
+		<section class="featured-projects">
+			<h1>Featured Projects</h1>
+			<div class="container">
+				
+
+				<ul class="project">
+
+					<img class="app-img" src="images/3MM thumbnail.png" alt="">
+					<div class="project-text">
+						<h2>3MM</h2>
+						<p>Three Men’s Morris, a fun twist on the classic Tic Tac Toe</p>
+						<ul class="technologies">
+							<li>Used UIKit</li>
+							<li>Model View Controller design pattern</li>
+							<li>Developed game logic</li>
+						</ul>
+						<div class="project-links">
+							<a href="https://apps.apple.com/us/app/3mm/id1582734005"><img class="fp-button app-store-logo" src="images/Download_App_Store_Badge.svg" alt=""></a>
+							<a href="/projects.html#3mm" class="fp-button">Read More</a>
+
+						</div>
+						
+
+					</div>
+					
+										
+				</ul>
+
+				<ul class="project">
+					
+					<img class="app-img" src="images/instaprep thumbnail.png" alt="">
+					<div class="project-text">
+						<h2>InstaPrep</h2>
+						<p>Photo editing app for social media posts</p>
+						<ul class="technologies">
+							<li>PhotoKit</li>
+							<li>Swift Package Manager for 3rd Party libraries</li>
+							<br>
+							<br>
+						</ul>
+						
+					</div>
+
+					<div class="project-links">
+						<div class="fp-button under-dev">
+							<img src="images/under-dev.svg" alt=""> Under Development
+						</div>
+						<a href="/projects.html#instaprep" class="fp-button">Read More</a>
+
+					</div>
+				
+										
+				</ul>
+
+								
+			</div>
+			<a href="/projects.html" class="all-projects">See All My Projects</a>
+		</section>
+
+		<section class="skills">
+			<h1>Skills</h1>
+			<div class="container">
+				
+				<ul class="skills-group ios-sdk">
+					<h2>iOS SDK</h2>
+					<li>Xcode & Interface Builder</li>
+					<li>App Store Connect</li>
+					<li>Swift Package Manager</li>
+				</ul>
+
+				<ul class="skills-group framework">
+					<h2>Apple Frameworks</h2>
+					<li>UIKit</li>
+					<li>CoreMotion</li>
+					<li>CoreMotion</li>
+					<li>Core Graphics</li>
+					<li>PhotoKit</li>
+				</ul>
+
+				<ul class="skills-group ios-tech">
+					<h2>iOS Technologies</h2>
+					<li>Autolayout</li>
+					<li>Cocoa Design Patterns</li>
+					<li>Universal App Development</li>
+					<li>Multithreading</li>
+					<li>ARC & Memory Management</li>
+				</ul>
+
+				<ul class="skills-group languages">
+					<h2>Languages</h2>
+					<li>Swift</li>
+					<li>HTML, CSS</li>
+					<li>MATLAB</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+
+				<ul class="skills-group other">
+					<h2>Other</h2>
+					<li>Github and version control</li>
+					<li>RESTful APIs</li>
+					<li>Adobe Tools, Figma, Vector Design</li>
+					<li>Networking</li>
+					
+				</ul>
+
+
+			</div>
+
+			<div class="clr"></div>
+		</section>
+		
 		<footer>
-    		<ul>
-        		<li><a href="mailto:sinareza@gmail.com">email</a></li>
-        		<li><a href="https://github.com/sina3">github.com/sina3</a></li>
-			</ul>
+			<div class="container">
+				<ul class="footer-items">
+					<p>Contact Me</p><br>
+					<li><a target="_blank" href="mailto:sinareza@gmail.com"><img src="images/email white.svg" alt="My Email"></a></li>
+					<li><a target="_blank" href="https://github.com/sina3"><img src="images/github-wh.png" alt="My Github"></a></li>
+					<li><a target="_blank" href="https://twitter.com/sinarez"><img src="images/twitter-logo.svg" alt="My Twitter"></a></li><br>
+					
+				</ul>
+				
+			</div>
+    		
 		</footer>
+
+		<script>
+
+			const mobileBtn = document.getElementById('mobile-cta')
+				nav = document.querySelector('nav')
+				mobileBtnExit = document.getElementById('mobile-exit')
+
+			mobileBtn.addEventListener('click', () => {
+				nav.classList.add('menu-btn');
+			})
+
+			mobileBtnExit.addEventListener('click', () => {
+				nav.classList.remove('menu-btn');
+			})
+
+		</script>
+
+
 	</body>
 </html>
+

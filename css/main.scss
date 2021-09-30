@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap');
+* {
+    margin:0;
+    
+}
+:root {
+
+    // Theme Colors
+    --primary-color:                #577590;
+    --accent-color:                 #e9edc9;
+    --featured-color:               #ccd5ae;
+    --background-color:             #fefcfb;
+    --navigation-background-color:  #ccd5ae;
+    --warning-color:                coral;
+    // Font Colors
+    --link-color:                   #a8146f;
+    --dark-font-color:              black;
+    --light-font-color:             white;
+    --accent-font-color:            indigo;
+
+}
+
+/* -------------------
+     Global Styles
+---------------------*/
+
+
+body {
+    background: var(--background-color);
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 2em 2em;
+    overflow: hidden;
+}
+
+.container {
+    overflow: hidden;
+}
+
+
+/* -------------------
+     Typography
+---------------------*/
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.subhead {
+    font-size: 1.1rem;
+}
+
+.hero-btn {
+    font-size: 1.1rem;
+}
+
+.fp-button {
+
+    font-size: 1.1rem;
+}
+
+.all-projects {
+    font-size: 1.2rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1em;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5em;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+
+    .subhead {
+        font-size: 1.2rem;
+    }
+
+    .hero-btn {
+        font-size: 1.2rem;
+    }
+
+    .fp-button {
+
+        font-size: 1.2rem;
+    }
+
+    .all-projects {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (min-width: 1080px) {
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1em;
+    }
+    
+    h2 {
+        font-size: 2.3rem;
+        margin-bottom: 0.5em;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+
+    .subhead {
+        font-size: 1.5rem;
+    }
+
+    .hero-btn {
+        font-size: 1.4rem;
+    }
+
+    .fp-button {
+
+        font-size: 1.3rem;
+    }
+
+    .all-projects {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1400px) {
+
+    
+    p {
+        line-height: 2rem;
+    }
+    
+}
+
+
+/* -------------------
+     Navigation
+---------------------*/
+
+.navbar {
+    background: var(--navigation-background-color);
+    padding: 1em;
+    overflow: hidden;
+    
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+
+        span {
+            color: var(--link-color);
+        }
+        
+    }
+
+    nav {
+        display: none;
+
+
+        .secondary-nav {
+            img {
+                height: 3em;
+            }
+        }
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+        overflow: hidden;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clr {
+    clear: both;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: var(--featured-color);
+    height: 100vh;
+    padding: 1em;
+
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            text-align: right;
+            cursor: pointer;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+        
+    }
+
+    ul.secondary-nav {
+        margin: 5em;
+        text-align: center;
+
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+/* -------------------
+     Hero Section
+---------------------*/
+
+.hero {
+    text-align: center;
+}
+
+.left-col {
+
+
+    .subhead {
+        text-transform: capitalize;
+        font-weight: bold;
+        color: var(--accent-font-color);
+        letter-spacing: .05em;
+    }
+
+    h1 {
+
+        line-height: 1em;
+        margin-top: .3em;
+    }
+
+    .hero-btn {
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        // font-size: 1.4em;
+        border-radius: 0.5em;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 1em;
+        margin-right: 0.5em;
+
+        
+    }
+    .down-resume {
+        background: var(--link-color);
+    }
+}
+
+.hero-img {
+    width: 70%;
+    border-radius: 4em;
+    margin: 2em auto;
+}
+
+/* -------------------
+     Featured Projects Section
+---------------------*/
+
+section.featured-projects {
+    background: var(--primary-color);
+    color: var(--light-font-color);
+
+    h1 {
+        text-align: center;
+    }
+
+}
+
+ul.project {
+    
+    background: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 12em 2em 1em 2em;
+    padding: .5em;
+    border-radius: 1em;
+    color: var(--dark-font-color);
+    position: relative;
+
+    .app-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+        margin-top: -10em;
+        min-width: 180px;
+        width: 40%;
+    }
+
+    .project-text {
+        position: relative;
+
+        .technologies {
+            margin-top: 1em;
+            padding-left: .1em;
+        
+            li {
+                margin-bottom: 0.8em;
+                margin-left: 2em;
+                position: relative;
+        
+                &:before {
+                    content: '';
+                    left: -2em;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../images/bullet.svg');
+                    background-size: contain;
+                    margin-right: .5em;
+                }
+            }
+        }
+
+
+
+    }
+
+
+    .fp-button {
+        background: var(--primary-color);
+        display: block;
+        color: var(--light-font-color);
+        width: fit-content;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        border-radius: 0.5em;
+        margin: 0.5em auto;
+    }
+
+    .app-store-logo {
+        padding: 0;
+        display: block;
+        
+    }
+
+    .under-dev {
+
+        text-align: center;
+        background: var(--warning-color);
+        width: fit-content;
+        border-radius: 0.5em;
+        
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+.all-projects {
+    background: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: var(--dark-font-color);
+    text-decoration: none;
+    padding: .6em 1.3em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    margin: 1em auto;
+}
+
+/* -------------------
+     Skills Section
+---------------------*/
+
+
+.skills {
+    
+    .container {
+        padding-top: 2em;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    li {
+        padding-left: 2.5em;
+        margin-bottom: .5em;
+    }
+
+    ul {
+        background: var(--accent-color);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-bottom: 4em;
+        text-align: left;
+        padding: 1em;
+        padding-top: 2em;
+        width: 60%;
+        border-radius: 1em;
+    }
+
+}
+
+ul.skills-group {
+    margin-inline: auto;
+}
+
+.skills-group {
+    h2 {
+        border-radius: 0.5em;
+        margin: 0;
+        padding-left: 1.5em;
+        text-align: left;
+        text-shadow: 0em 0.1em 0.1em rgb(99, 94, 94);
+        margin-top: -2.1em;
+        margin-bottom: .8em;
+        position: relative;
+
+        &:before {
+            content: '';
+            top: 0.1em;
+            left: 0.1em;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+}
+
+
+.ios-sdk {
+
+    h2 {
+
+        &:before {
+            background-image: url('../images/apple-logo.png');
+        }
+    }
+}
+
+.framework {
+
+    h2 {
+
+        &:before {
+            background-image: url('../images/frameworks.png');
+        }
+    }
+}
+
+.ios-tech {
+
+    h2 {
+
+        &:before {
+            background-image: url('../images/iOS.svg');
+        }
+    }
+}
+
+.languages {
+
+    h2 {
+
+        &:before {
+            background-image: url('../images/programming-language.png');
+        }
+    }
+}
+
+.other {
+
+    h2 {
+
+        &:before {
+            background-image: url('../images/various.svg');
+        }
+    }
+}
+
+
+/* -------------------
+     Footer Section
+---------------------*/
+
+footer {
+    background: black;
+    color: white;
+    padding: 5em 2em;
+    text-align: center;
+
+    ul {
+
+        li {
+            display: inline-block;
+            margin: 0 0.5em;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: .2em;
+            height: 2em;                
+        }
+    }
+    
+}
+
+
+/* -------------------
+     Media Queries
+---------------------*/
+
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: black;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+
+        li.current a {
+            font-weight: bold;
+        }
+
+        ul.secondary-nav {
+            margin: 0;
+            text-align: center;
+    
+            li {
+                display: inline-block;
+            }
+            img {
+                height: 1.5em;
+            }
+        }
+
+        
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+
+        .left-col {
+            margin: auto 1em;
+
+            h1 {
+                text-align: left;
+            }
+        }
+    }
+
+    .hero-img {
+        width: 40%;
+        margin-right: 8em;
+    }
+
+    .project-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    ul.project {
+        .fp-button {
+            margin: 0.5em;
+        }
+    }
+
+    .app-img {
+        
+        max-width: 300px;
+        
+    }
+
+    .skills-group {
+        h2 {
+            padding-left: 1.4em;
+            margin-top: -1.8em;
+    
+            &:before {
+                top: 0.2em;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 2em;
+        margin: 0;
+    }
+    
+    .left-col {
+        padding-left: 3em;
+    }
+    
+
+    ul.project {
+        display: block;
+        width: 40%;
+        
+    }
+
+    .project-text {
+    
+        padding: 0;
+        
+
+    }
+
+    .featured-projects .container {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .app-img {
+        float: none;
+        min-width: 250px;
+        max-width: 350px;
+    }
+
+
+    .skills .container {
+        padding-inline: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .skills-group {
+
+            flex-basis: 40%;
+        }
+    }
+
+    .skills-group {
+        h2 {
+            margin-top: -1.7em;
+    
+            &:before {
+                top: 0.2em;
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sina Rezazadeh, iOS Developer</title>
+		<link rel="stylesheet" href="css/project.css">
+	</head>
+	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/double-up-arrow.png" alt=""></button>
+		<div class="navbar">
+			<div class="container">
+				<a class="logo" href="index.html">Sina<span>Rezazadeh</span></a>
+
+				<img id="mobile-cta" class="mobile-menu" src="images/menu-icon.svg" alt="Open Navigation">
+
+				<nav>
+					<img id="mobile-exit" class="mobile-menu-exit" src="images/close-icon.svg" alt="Close Navigation">
+					<ul class="primary-nav">
+						<li><a href="index.html">Home</a></li>
+						<li class="current"><a href="#">Projects</a></li>
+						<li><a href="Sina Rezazadeh - Resume.pdf">Resumé</a></li>
+						<li><a href="about.html">About Me</a></li>
+					</ul>
+
+					<ul class="secondary-nav">
+						<li><a target="_blank" href="https://twitter.com/sinarez"><img src="images/twitter-logo.svg" alt="My Twitter"></a></li>
+						<li><a target="_blank" href="https://github.com/sina3"><img src="images/github-bl.svg" alt="My Github"></a></li>
+						
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+
+		<section class="projects-overview">
+			<div class="container">
+				<h1>My Projects</h1>
+				<div class="project-thumbnails-grid">
+					<div class="project-thumbnail">
+						<a href="#3mm">
+							<img src="images/3MM thumbnail.png" alt="">
+							<br>
+							<h3>3MM</h3>
+						</a>
+					</div>
+
+					<div class="project-thumbnail">
+						<a href="#instaprep">
+							<img src="images/instaprep thumbnail.png" alt="">
+							<br>
+							<h3>InstaPrep</h3>
+						</a>
+					</div>
+
+					<div class="project-thumbnail ipad-app-thumbnail">
+						<a href="#emojiart">
+							<img src="images/emojiart thumbnail.png" alt="">
+							<br>
+							<h3>EmojiArt</h3>
+						</a>
+					</div>
+
+					<div class="project-thumbnail">
+						<a href="#cassini">
+							<img src="images/cassini thumbnail.png" alt="">
+							<br>
+							<h3>Cassini</h3>
+						</a>
+					</div>
+
+					<div class="project-thumbnail">
+						<a href="#playing-card">
+							<img src="images/playingcard thumbnail.png" alt="">
+							<br>
+							<h3>Playing Card</h3>
+						</a>
+					</div>
+
+					<div class="project-thumbnail">
+						<a href="#concentration">
+							<img src="images/concentration thumbnail.png" alt="">
+							<br>
+							<h3>Concentration</h3>
+						</a>
+					</div>
+
+				</div>
+				
+			</div>
+			
+		</section>
+
+		<section class="projects">
+			<div class="container">
+				<div class="project-grid">
+					<h1 id="3mm">3MM</h1>
+					<div class="image-wrap">
+						<img class="app-highlight-img" src="images/3MM mu 01.png" alt="">
+					</div>
+					<div class="project-content">
+						<div class="about-app">
+							<p>This is a game called Three Men’s Morris. It is a variant of classic game of Tic Tac Toe.
+								Tic Tac Toe is the game that many new developers make using tutorials as beginner projects. I took the concept and worked on a slightly different game logic. I developed the app from ground up so that I get comfortable working independently.</p>
+								<p>I published the app to App Store as soon as I had a working MVP to get things running. Doing this, I also learned using App Store Connect to setup app information and publish to App Store. I have a lot of features planned that will soon be shipped with the next update.</p>
+								<p>You can read more about the game on the <a href="https://sina3.github.io/ThreeMM/">app website.</a></p>
+						</div>
+						<div class="tech-stack">
+							<h2>Technology Stack</h2>
+							<ul>
+								<li>Swift and Xcode</li>
+								<li>MVC design pattern</li>
+								<li>UIKit</li>
+								<li>Storyboards</li>
+							</ul>
+							
+						</div>
+					</div>
+					
+					<div class="links">
+						<a class="links-item" href="https://apps.apple.com/us/app/3mm/id1582734005"><img class="app-store-logo" src="images/Download_App_Store_Badge.svg" alt=""></a>
+						<a class="github-btn links-item" href="https://github.com/sina3/ThreeMM">See on Github</a>
+					</div>
+
+				</div>
+
+				<div class="project-grid">
+					<h1 id="instaprep">InstaPrep</h1>
+					<div class="image-wrap">
+						<img class="app-highlight-img" src="images/instaprep under development.png" alt="">
+					</div>
+					<div class="project-content">
+						<div class="about-app">
+							<p>This is my current project and will be finished soon. InstaPrep’s main purpose is to let user crop big images, specially Panorama pictures, into smaller images fit for use in Instagram and other similar apps.</p>
+							<p>I am using some of the newer methods introduced by Apple for PhotoKit to work with Photo library. After publishing MVP to App Store, more versatile editing features will be added in later versions.</p>
+
+						</div>
+						<div class="tech-stack">
+							<h2>Technology Stack</h2>
+							<ul>
+								<li>Swift and Xcode</li>
+								<li>UIKit</li>
+								<li>PhotoKit</li>
+								<li>Swift Package Manager</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="links">
+
+						<div class="under-dev">
+							<img src="images/under-dev.svg" alt=""> Under Development
+						</div>
+
+					</div>
+
+				</div>
+				
+
+				<div class="project-grid">
+					<h1 id="emojiart">EmojiArt</h1>
+					<div class="image-wrap">
+						<img class="app-highlight-img" src="images/emojiart mu 01.png" alt="">
+					</div>
+					<div class="tutorial-warning">
+						<img src="images/information.png" alt=""> Tutorial app as part of CS193P course
+					</div>
+					<div class="project-content">
+						<div class="about-app">
+							<p>EmojiArt was the last and most feature-packed app in the course. It enables dragging images from web browser and importing them in the app, adding custom text and emojis and saving the document for future edits.</p>
+							<p>Once finished, I was really confident that using these skills, I can recreate a lot of complicated features I see in professional iPhone and iPad apps. In this project, I learned: 
+							</p>
+							<br>
+
+							<ul>
+								<li>Drag & Drop</li>
+								<li>UITableView and UICollectionView</li>
+								<li>UITextField and Keyboard</li>
+								<li>Persistence and UIDocument</li>
+								<li>UIDocumentBrowserViewController</li>
+								<li>Using Codable protocol to create a JSON representation of the document</li>
+								<li>Notifications & KVO</li>
+								<li>Application Lifecycle</li>
+								<li>Modal Seugues, Popover, and Unwind Segue</li>
+								<li>Working with camera using UIImagePickerViewController</li>
+							</ul>
+
+						</div>
+						<div class="tech-stack">
+							<h2>Technology Stack</h2>
+							<ul>
+								<li>Swift and Xcode</li>
+								<li>UIKit</li>
+								<li>UIDocuments</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="links">
+						<a class="github-btn links-item" href="https://github.com/sina3/EmojiArt">See on Github</a>
+					</div>
+					
+
+				</div>
+
+				<div class="project-grid">
+					<h1 id="cassini">Cassini</h1>
+					<div class="image-wrap">
+						<img class="app-highlight-img" src="images/cassini mu 01.png" alt="">
+					</div>
+					<div class="tutorial-warning">
+						<img src="images/information.png" alt=""> Tutorial app as part of CS193P course
+					</div>
+					<div class="project-content">
+						<div class="about-app">
+							<p>This simple app uses a scrollview to let user load and navigate large images from Cassini space probe. It was a great opportunity to learn very important topics that any iOS developer would need to have under their belt, including:</p>
+							<br>
+
+							<ul>
+								<li>UIScollView</li>
+								<li>Multithreading and Grand Central Dispatch</li>
+								<li>URLSession</li>
+								<li>Alerts and Action Sheets</li>
+							</ul>
+
+						</div>
+						<div class="tech-stack">
+							<h2>Technology Stack</h2>
+							<ul>
+								<li>Swift and Xcode</li>
+								<li>UIKit</li>
+								<li>GCD</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="links">
+						<a class="github-btn links-item" href="https://github.com/sina3/Cassini">See on Github</a>
+					</div>
+					
+
+				</div>
+
+				<div class="project-grid">
+					<h1 id="playing-card">Playing Card</h1>
+					<div class="image-wrap">
+						<img class="app-highlight-img" src="images/playingcard 01.png" alt="">
+					</div>
+					<div class="tutorial-warning">
+						<img src="images/information.png" alt=""> Tutorial app as part of CS193P course
+					</div>
+					<div class="project-content">
+						<div class="about-app">
+							<p>This is a card version of concentration game with small twists and changes. The second project as part of the course let me engage with more complicated concepts and patterns in iOS development. In this project, I learned:</p>
+							<br>
+
+							<ul>
+								<li>Drawing using Core Graphic methods</li>
+								<li>Setting up Gesture Recognizers</li>
+								<li>How to add swipe, tap and pinch gestures to views</li>
+								<li>View hierarchy</li>
+								<li>Managing project assets in Xcode</li>
+								<li>Animations using UIViewPropertyAnimator</li>
+								<li>UIDynamicAnimator</li>
+								<li>Core Motion and working with hardware sensors</li>
+							</ul>
+
+						</div>
+						<div class="tech-stack">
+							<h2>Technology Stack</h2>
+							<ul>
+								<li>Swift and Xcode</li>
+								<li>UIKit</li>
+								<li>Core Graphic</li>
+								<li>Core Motion</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="links">
+						<a class="github-btn links-item" href="https://github.com/sina3/PlayingCard">See on Github</a>
+					</div>
+					
+
+				</div>
+
+				<div class="project-grid">
+					<h1 id="concentration">Concentration</h1>
+					<div class="image-wrap">
+						<img class="app-highlight-img" src="images/concentration mu 01.png" alt="">
+					</div>
+					<div class="tutorial-warning">
+						<img src="images/information.png" alt=""> Tutorial app as part of CS193P course
+					</div>
+					<div class="project-content">
+						<div class="about-app">
+							<p>This is a well-known game where you match pairs of identical cards by trying to remember their location on a grid.</p>
+							<p>This was my first experience building an iOS app and I learned a lot in the process including: </p>
+							<br>
+
+							<ul>
+								<li>How to work with interface builder</li>
+								<li>Working with UI elements from code using @IBOutlet and @IBAction</li>
+								<li>MVC design pattern</li>
+								<li>ViewController Lifecycle</li>
+								<li>Swift data structures such as structs, enums, optionals, …</li>
+								<li>Automatic Reference Counting and and Memory management</li>
+								<li>Access control</li>
+								<li>How to use extensions to add functionality to data structures</li>
+								<li>Protocols and Delegation</li>
+								<li>Tab Bar Controller, Navigation VC, Split View Controller</li>
+								<li>Segues</li>
+								<li>Size Classes in Autolayout</li>
+							</ul>
+
+						</div>
+						<div class="tech-stack">
+							<h2>Technology Stack</h2>
+							<ul>
+								<li>Swift and Xcode</li>
+								<li>UIKit</li>
+								<li>Storyboards and Autolayout</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="links">
+						<a class="github-btn links-item" href="https://github.com/sina3/Concentration">See on Github</a>
+					</div>
+					
+
+				</div>
+
+
+			</div>
+			
+		</section>
+
+		
+		<footer>
+			<div class="container">
+				<ul class="footer-items">
+					<p>Contact Me</p><br>
+					<li><a target="_blank" href="mailto:sinareza@gmail.com"><img src="images/email white.svg" alt="My Email"></a></li>
+					<li><a target="_blank" href="https://github.com/sina3"><img src="images/github-wh.png" alt="My Github"></a></li>
+					<li><a target="_blank" href="https://twitter.com/sinarez"><img src="images/twitter-logo.svg" alt="My Twitter"></a></li><br>
+					
+				</ul>
+			</div>
+    		
+		</footer>
+
+		<script>
+
+			const mobileBtn = document.getElementById('mobile-cta')
+				nav = document.querySelector('nav')
+				mobileBtnExit = document.getElementById('mobile-exit')
+
+			mobileBtn.addEventListener('click', () => {
+				nav.classList.add('menu-btn');
+			})
+
+			mobileBtnExit.addEventListener('click', () => {
+				nav.classList.remove('menu-btn');
+			})
+
+
+			//Get the button:
+			mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}
+
+		</script>
+
+
+	</body>
+</html>
+

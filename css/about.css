@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap");
+* {
+  margin: 0;
+}
+
+:root {
+  --primary-color:                #577590;
+  --accent-color:                 #e9edc9;
+  --featured-color:               #ccd5ae;
+  --background-color:             #fefcfb;
+  --navigation-background-color:  #ccd5ae;
+  --warning-color:                coral;
+  --link-color:                   #a8146f;
+  --dark-font-color:              black;
+  --light-font-color:             white;
+  --accent-font-color:            indigo;
+}
+
+/* -------------------
+     Global Styles
+---------------------*/
+body {
+  background: var(--background-color);
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 2em 2em;
+  overflow: hidden;
+}
+
+/* -------------------
+     Typography
+---------------------*/
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+}
+
+a {
+  color: #691d86;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  p {
+    line-height: 2rem;
+  }
+}
+
+/* -------------------
+     Navigation Bar
+---------------------*/
+.navbar {
+  background: var(--navigation-background-color);
+  padding: 1em;
+  overflow: hidden;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: var(--link-color);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar nav .secondary-nav img {
+  height: 3em;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  overflow: hidden;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--featured-color);
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+  cursor: pointer;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+nav ul.secondary-nav {
+  margin: 5em;
+  text-align: center;
+}
+
+nav ul.secondary-nav li {
+  display: inline-block;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+/* -------------------
+     Back to Top Button
+---------------------*/
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #e65d02;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn img {
+  width: 20px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+/* -------------------
+     About Me Section
+---------------------*/
+.about-content {
+  margin-bottom: 1.5em;
+  padding: 1.5em 0;
+}
+
+.about-content img {
+  width: 60%;
+  margin: 1em auto;
+  border-radius: 1em;
+}
+
+.tldr {
+  margin-bottom: 5em;
+}
+
+.tldr-content {
+  padding: 1em;
+  background: var(--accent-color);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.km-text-left {
+  background: var(--accent-color);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.km-text-right {
+  background: var(--accent-color);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+/* -------------------
+     Footer Section
+---------------------*/
+footer {
+  background: black;
+  color: white;
+  padding: 5em 2em;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .2em;
+  height: 2em;
+}
+
+/* -------------------
+     Media Queries
+---------------------*/
+@media only screen and (min-width: 768px) {
+  .content {
+    margin-bottom: 2em;
+  }
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav ul.secondary-nav {
+    margin: 0;
+    text-align: center;
+  }
+  .navbar nav ul.secondary-nav li {
+    display: inline-block;
+  }
+  .navbar nav ul.secondary-nav img {
+    height: 1.5em;
+  }
+  .about-content img {
+    margin: 0;
+    width: 100%;
+  }
+  .tldr-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tldr-content .tldr-text {
+    line-height: 1.5em;
+    width: 50%;
+  }
+  .tldr-content .tldr-img {
+    width: 40%;
+  }
+  .km-text-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .km-text-left .km-text {
+    line-height: 1.5em;
+    width: 50%;
+  }
+  .km-text-left .km-img {
+    width: 40%;
+  }
+  .km-text-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .km-text-right .km-text {
+    line-height: 1.5em;
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .km-text-right .km-img {
+    width: 40%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=about.css.map */
